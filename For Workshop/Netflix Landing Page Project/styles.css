@@ -33,6 +33,7 @@ header .logo-netflix svg{
 
 header .div-left-btn {
     text-align: center;
+    padding-left: 15rem; /*Challenge*/
 
 }
 
@@ -161,12 +162,4 @@ div.screen-splash button{
     color: #fff;
     border: 0;
 }
-
-/*    
-Challenge Fix: Sign in
-    height: 1.5rem;
-
-    div.background-image 
-    
-*/
 
