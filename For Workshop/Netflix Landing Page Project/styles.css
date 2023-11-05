@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 3.5rem;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+header a.logo-netflix {
+    display: block;
+}
+
+header .logo-netflix svg{
+    color: rgb(229,9,20);
+    fill: currentColor;
+    height: 40px;
+
+}
+
+header .div-left-btn {
+    text-align: center;
+
+}
+
+header a.btn-left {
+    display: inline-block;
+    background-color: rgb(229,9,20);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    height: 2rem; /*Challenge*/
+}
+
+header select{
+    background: transparent;
+    color: #fff;
+    padding: 6px 0 6px 20px;
+    border-radius: 0.188rem;
+}
+
+header div.select-container {
+    display: inline-block;
+    border-radius: 0.188rem; /*added*/
+    margin-right: 30px;
+}
+
+header div.select-container svg{
+   /* fill: white; */
+    color: white;
+    height: 1rem;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+div.screen-splash {
+    position: relative;
+}
+
+div.screen-splash div.gradient{
+    background-image: linear-gradient(to top, 
+    rgba(0, 0, 0, 0.8) 0, 
+    rgba(0, 0, 0, 0) 60%, 
+    rgba(0, 0, 0, 0.8) 100%);
+    position: absolute;
+    inset: 0;
+}
+div.screen-splash div.background-image img {
+    max-width:100%;
+    /*
+    background-image: linear-gradient(to top, 
+    rgba(0, 0, 0, 0.8) 0, 
+    rgba(0, 0, 0, 0) 60%, r
+    gba(0, 0, 0, 0.8) 100%);
+    */
+    opacity: 60%;
+}
+
+div.screen-splash div.container-content{
+    /*max-width: 655px;*/
+    position: absolute;
+    inset: 0;
+    /*left: 50%;*/
+    /*margin-left: -327.5px;*/
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+div.screen-splash h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+div.screen-splash h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+div.screen-splash h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+div.screen-splash form{
+    position: relative;
+    /*padding: 0rem 10rem 0rem 10rem; */
+    margin: 1rem 10rem 0rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+div.screen-splash input{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+div.screen-splash input ~ span{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    z-index: 3;
+    color: #000;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+div.screen-splash input:focus{
+    padding: 14px 0px 6px 0px;
+}
+
+div.screen-splash input:focus ~ span{
+    top: 2px;
+    font-size: .7rem;
+}
+
+div.screen-splash button{
+    font-size: 1.635rem;
+    padding: 8px 26px;
+    background-color: rgb(229,9,20);
+    color: #fff;
+    border: 0;
+}
+
+/*    
+Challenge Fix: Sign in
+    height: 1.5rem;
+
+    div.background-image 
+    
+*/
+
